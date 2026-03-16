@@ -1,0 +1,15 @@
+# Netlify redirects — Vali-Validation Docs (multilingual)
+# Default locale: en (served at /)
+# Spanish locale: es (served at /es/)
+
+# Redirect /docs root to introduction (English)
+/docs                           /docs/introduction              301
+
+# Redirect /es/docs root to introduction (Spanish)
+/es/docs                        /es/docs/introduction           301
+
+# Redirect legacy /en/* paths to root (English is default, no /en/ prefix)
+/en/*                           /:splat                         301
+
+# SPA fallback — Docusaurus generates static HTML so this covers any missed routes
+/*                              /404.html                       404

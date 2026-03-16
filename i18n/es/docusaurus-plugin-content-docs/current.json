@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Primeros pasos",
+    "description": "The label for category Getting Started in sidebar docs"
+  },
+  "sidebar.docs.category.Validators & Rules": {
+    "message": "Validadores y reglas",
+    "description": "The label for category Validators & Rules in sidebar docs"
+  },
+  "sidebar.docs.category.Results & Errors": {
+    "message": "Resultados y errores",
+    "description": "The label for category Results & Errors in sidebar docs"
+  },
+  "sidebar.docs.category.Integration & DI": {
+    "message": "Integración e inyección de dependencias",
+    "description": "The label for category Integration & DI in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced Patterns": {
+    "message": "Patrones avanzados",
+    "description": "The label for category Advanced Patterns in sidebar docs"
+  }
+}

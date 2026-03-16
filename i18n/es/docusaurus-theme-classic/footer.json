@@ -1,0 +1,34 @@
+{
+  "link.item.label.Introduction": {
+    "message": "Introducción",
+    "description": "The label for link Introduction in the footer"
+  },
+  "link.item.label.Quick Start": {
+    "message": "Inicio rápido",
+    "description": "The label for link Quick Start in the footer"
+  },
+  "link.item.label.Basic Rules": {
+    "message": "Reglas básicas",
+    "description": "The label for link Basic Rules in the footer"
+  },
+  "link.item.label.Validators": {
+    "message": "Validadores",
+    "description": "The label for link Validators in the footer"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label for link GitHub in the footer"
+  },
+  "link.item.label.NuGet": {
+    "message": "NuGet",
+    "description": "The label for link NuGet in the footer"
+  },
+  "link.item.label.Report Issue": {
+    "message": "Reportar un problema",
+    "description": "The label for link Report Issue in the footer"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Vali-Validation. Construido con Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Vali-Validation",
+    "description": "The title in the navbar"
+  },
+  "item.label.Documentación": {
+    "message": "Documentación",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.NuGet": {
+    "message": "NuGet",
+    "description": "Navbar item with label NuGet"
+  }
+}

@@ -1,0 +1,123 @@
+/**
+ * Vali-Validation Docs — custom theme
+ * Brand: Lime #C4F82A · Dark #0A0A0A · Space Grotesk + Space Mono
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --ifm-color-primary: #7AB818;
+  --ifm-color-primary-dark: #6da315;
+  --ifm-color-primary-darker: #669912;
+  --ifm-color-primary-darkest: #527c0e;
+  --ifm-color-primary-light: #87cc1b;
+  --ifm-color-primary-lighter: #94df1e;
+  --ifm-color-primary-lightest: #aef030;
+  --ifm-code-font-size: 94%;
+  --ifm-font-family-base: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'Space Mono', 'Fira Code', monospace;
+  --docusaurus-highlighted-code-line-bg: rgba(196, 248, 42, 0.08);
+  --ifm-navbar-height: 60px;
+  --brand-lime: #C4F82A;
+  --brand-lime-dark: #7AB818;
+  --brand-accent: #7C3AED;
+  --brand-bg: #0A0A0A;
+  --brand-surface: #18181B;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #C4F82A;
+  --ifm-color-primary-dark: #aede21;
+  --ifm-color-primary-darker: #a3d11e;
+  --ifm-color-primary-darkest: #7AB818;
+  --ifm-color-primary-light: #cdf943;
+  --ifm-color-primary-lighter: #d2fa56;
+  --ifm-color-primary-lightest: #dcfb78;
+  --docusaurus-highlighted-code-line-bg: rgba(196, 248, 42, 0.1);
+  --ifm-background-color: #0A0A0A;
+  --ifm-navbar-background-color: #0f0f0f;
+  --ifm-footer-background-color: #000000;
+  --ifm-card-background-color: #18181B;
+}
+
+/* ─── Navbar ─────────────────────────────────────────── */
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar__logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+}
+
+/* ─── Hero landing page ──────────────────────────────── */
+.hero--primary {
+  background: linear-gradient(135deg, #0A0A0A 0%, #18181B 60%, #0f1a00 100%);
+}
+
+/* ─── Code blocks ────────────────────────────────────── */
+pre code {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  font-family: 'Space Mono', monospace;
+}
+
+/* ─── Admonitions ────────────────────────────────────── */
+.alert--info {
+  --ifm-alert-border-color: var(--brand-lime);
+}
+
+/* ─── Package badge pills ────────────────────────────── */
+.badge--package {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 2em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--brand-lime);
+  color: #0A0A0A;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+/* ─── Diagram containers ─────────────────────────────── */
+.diagram-box {
+  background: var(--ifm-code-background);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+/* ─── Feature cards on home ──────────────────────────── */
+.feature-card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 20px rgba(196, 248, 42, 0.12);
+  border-color: var(--brand-lime);
+}
+
+/* ─── API tables ─────────────────────────────────────── */
+table th {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* ─── Version pill in sidebar ────────────────────────── */
+.menu__link--active .badge {
+  float: right;
+  font-size: 0.65rem;
+}
