@@ -1,41 +1,17 @@
-# Website
+# Vali-Validation Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Official documentation site for **Vali-Validation**, a fluent validation library for .NET with rule chaining, async validators, ASP.NET Core integration, MediatR pipeline support, and full i18n.
 
-## Installation
+Built with [Docusaurus](https://docusaurus.io/).
 
-```bash
-yarn
-```
-
-## Local Development
+## Getting started
 
 ```bash
-yarn start
+yarn        # install dependencies
+yarn start  # start local dev server
+yarn build  # generate static site
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Author
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+**Felipe Rafael Montenegro Morriberon**
