@@ -39,6 +39,34 @@ const config: Config = {
     },
   },
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: { rel: 'canonical', href: 'https://vali-validation.dev/' },
+    },
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Vali-Validation',
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Any',
+        description: 'Fluent validation library for .NET with rule chaining, async validators, and ASP.NET Core / MediatR integration.',
+        url: 'https://www.nuget.org/packages/Vali-Validation',
+        downloadUrl: 'https://www.nuget.org/packages/Vali-Validation',
+        author: {
+          '@type': 'Person',
+          name: 'Felipe Rafael Montenegro Morriberon',
+          url: 'https://www.linkedin.com/in/felipe-rafael-montenegro-morriberon-a79a341b2/',
+        },
+        programmingLanguage: 'C#',
+        license: 'https://opensource.org/licenses/MIT',
+      }),
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -57,6 +85,26 @@ const config: Config = {
   ],
 
   themeConfig: {
+    image: 'img/logo.png',
+    metadata: [
+      { name: 'description', content: 'Vali-Validation is a fluent validation library for .NET with rule chaining, async validators, ASP.NET Core integration, MediatR pipeline support, and full i18n.' },
+      { name: 'keywords', content: 'Vali-Validation, dotnet, .NET validation, fluent validation, rule chaining, async validation, ASP.NET Core, MediatR, NuGet, C# validation library' },
+      { name: 'author', content: 'Felipe Rafael Montenegro Morriberon' },
+      { name: 'robots', content: 'index, follow, max-image-preview:large' },
+      { name: 'theme-color', content: '#6366f1' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Vali-Validation Docs' },
+      { property: 'og:title', content: 'Vali-Validation — Fluent Validation Library for .NET' },
+      { property: 'og:description', content: 'Fluent validation library for .NET with rule chaining, async validators, ASP.NET Core integration, MediatR pipeline support, and multilingual error messages.' },
+      { property: 'og:url', content: 'https://vali-validation.dev/' },
+      { property: 'og:image', content: 'https://vali-validation.dev/img/logo.png' },
+      { property: 'og:locale', content: 'en_US' },
+      { property: 'og:locale:alternate', content: 'es_ES' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Vali-Validation — Fluent Validation Library for .NET' },
+      { name: 'twitter:description', content: 'Fluent .NET validation with rule chaining, async validators, ASP.NET Core and MediatR pipeline support. Available on NuGet.' },
+      { name: 'twitter:image', content: 'https://vali-validation.dev/img/logo.png' },
+    ],
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
