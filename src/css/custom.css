@@ -52,8 +52,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(196, 248, 42, 0.1);
 
   --ifm-background-color: #0A0A0A;
-  --ifm-navbar-background-color: transparent;
-  --ifm-footer-background-color: #000000;
+  --ifm-background-surface-color: #0A0A0A;
+  --ifm-navbar-background-color: #0A0A0A;
+  --ifm-footer-background-color: #0A0A0A;
   --ifm-card-background-color: #18181B;
 
   --vb-bg-doc: #0a0a0a;
@@ -254,7 +255,7 @@ body:has(.navbar-sidebar--show) {
 }
 
 [data-theme='dark'] .theme-doc-sidebar-container {
-  background: linear-gradient(180deg, #090e09 0%, #0b140b 60%, #0d180d 100%);
+  background: #0A0A0A;
   border-right: 1px solid rgba(196, 248, 42, 0.08) !important;
 }
 
@@ -508,15 +509,21 @@ tbody tr:last-child td { border-bottom: none; }
 tbody tr:hover { background: rgba(122, 184, 24, 0.04); }
 
 /* ─────────────────────────────────────────────
-   MERMAID
+   DRAW.IO DIAGRAMS
    ───────────────────────────────────────────── */
-.docusaurus-mermaid-container {
+.drawio-container,
+[class*='drawio'] {
   border-radius: 12px;
-  padding: 1.5rem;
   border: 1px solid rgba(122, 184, 24, 0.15);
-  background: rgba(122, 184, 24, 0.03);
-  overflow-x: auto;
+  background: rgba(7, 7, 17, 0.6);
+  overflow: auto;
   margin: 1.5rem 0;
+}
+
+[data-theme='light'] .drawio-container,
+[data-theme='light'] [class*='drawio'] {
+  background: rgba(245, 255, 240, 0.8);
+  border-color: rgba(122, 184, 24, 0.2);
 }
 
 /* ─────────────────────────────────────────────
@@ -566,8 +573,12 @@ tbody tr:hover { background: rgba(122, 184, 24, 0.04); }
 [data-theme='dark'] .footer { background: #000000; border-top: 1px solid rgba(196, 248, 42, 0.12); }
 .footer__title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #7AB818; }
 [data-theme='dark'] .footer__title { color: #a3e635; }
+.footer__link-item { color: #374151; }
+[data-theme='dark'] .footer__link-item { color: rgba(220, 240, 220, 0.6); }
 .footer__link-item:hover { color: #7AB818; text-decoration: none; }
 [data-theme='dark'] .footer__link-item:hover { color: #C4F82A; }
+.footer__copyright { color: #6b7280; }
+[data-theme='dark'] .footer__copyright { color: rgba(220, 240, 220, 0.35); }
 
 /* ─────────────────────────────────────────────
    DOC PAGE LAYOUT
@@ -617,4 +628,17 @@ tbody tr:hover { background: rgba(122, 184, 24, 0.04); }
 .feature-card:hover {
   box-shadow: 0 4px 20px rgba(196, 248, 42, 0.12);
   border-color: var(--brand-lime);
+}
+
+/* ── DOC PAGE — uniform background ── */
+[data-theme='dark'] html,
+[data-theme='dark'] body,
+[data-theme='dark'] .main-wrapper,
+[data-theme='dark'] .docPage,
+[data-theme='dark'] .docMainContainer,
+[data-theme='dark'] .docItemContainer,
+[data-theme='dark'] .col.docItemCol,
+[data-theme='dark'] .theme-doc-markdown,
+[data-theme='dark'] article {
+  background-color: #0A0A0A !important;
 }
